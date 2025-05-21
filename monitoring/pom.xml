@@ -10,10 +10,11 @@
 	<name>monitoring</name>
 
 	<parent>
-		<groupId>com.piggymetrics</groupId>
-		<artifactId>piggymetrics</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<groupId>com.fintrack</groupId>
+		<artifactId>fintrack-microservices</artifactId>
+		<version>1.0.0</version>
 	</parent>
+
 
 	<dependencies>
 		<dependency>
@@ -25,10 +26,22 @@
 			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version> <!-- Last stable JUnit 4 -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.21</version> <!-- latest stable -->
+		</dependency>
+
 	</dependencies>
 
 	<build>
